@@ -1,5 +1,5 @@
 {
-  "neighborhood": "Williamsburg, Brooklyn",
+  "neighborhood": "North Brooklyn: Williamsburg, East Williamsburg & Greenpoint",
   "lastReviewed": "2026-11-16",
   "tiers": {
     "pe": "Private equity / growth equity backed",
@@ -13,7 +13,7 @@
       "address": "164 N 4th St",
       "lat": 40.715689,
       "lng": -73.959178,
-      "area": "North Side",
+      "area": "Williamsburg: North Side",
       "cuisine": "Bakery & sweets",
       "tier": "pe",
       "confidence": "medium",
@@ -40,7 +40,7 @@
       "address": "76 N 4th St",
       "lat": 40.717295,
       "lng": -73.961643,
-      "area": "North Side",
+      "area": "Williamsburg: North Side",
       "cuisine": "Coffee",
       "tier": "pe",
       "confidence": "high",
@@ -68,7 +68,7 @@
       "address": "204 Wythe Ave",
       "lat": 40.71841,
       "lng": -73.962644,
-      "area": "Waterfront",
+      "area": "Williamsburg: Waterfront",
       "cuisine": "Bakery & sweets",
       "tier": "pe",
       "confidence": "medium",
@@ -100,7 +100,7 @@
       "address": "164 Bedford Ave",
       "lat": 40.718396,
       "lng": -73.957376,
-      "area": "North Side",
+      "area": "Williamsburg: North Side",
       "cuisine": "American",
       "tier": "pe",
       "confidence": "high",
@@ -132,7 +132,7 @@
       "address": "189 Bedford Ave",
       "lat": 40.717509,
       "lng": -73.957783,
-      "area": "North Side",
+      "area": "Williamsburg: North Side",
       "cuisine": "Fast casual",
       "tier": "pe",
       "confidence": "high",
@@ -160,7 +160,7 @@
       "address": "186 Bedford Ave",
       "lat": 40.71774,
       "lng": -73.95816,
-      "area": "North Side",
+      "area": "Williamsburg: North Side",
       "cuisine": "Coffee",
       "tier": "corp",
       "confidence": "high",
@@ -187,7 +187,7 @@
       "address": "162 N 4th St",
       "lat": 40.715689,
       "lng": -73.959178,
-      "area": "North Side",
+      "area": "Williamsburg: North Side",
       "cuisine": "Fast casual",
       "tier": "corp",
       "confidence": "high",
@@ -214,7 +214,7 @@
       "address": "160 Berry St",
       "lat": 40.717438,
       "lng": -73.960645,
-      "area": "North Side",
+      "area": "Williamsburg: North Side",
       "cuisine": "Fast casual",
       "tier": "corp",
       "confidence": "high",
@@ -241,7 +241,7 @@
       "address": "174 N 4th St",
       "lat": 40.715354,
       "lng": -73.958736,
-      "area": "North Side",
+      "area": "Williamsburg: North Side",
       "cuisine": "Fast casual",
       "tier": "corp",
       "confidence": "high",
@@ -268,7 +268,7 @@
       "address": "178 Broadway",
       "lat": 40.709769,
       "lng": -73.962584,
-      "area": "South Side",
+      "area": "Williamsburg: South Side",
       "cuisine": "Steakhouse",
       "tier": "indie",
       "confidence": "high",
@@ -291,7 +291,7 @@
       "address": "32 Withers St",
       "lat": 40.716495,
       "lng": -73.951208,
-      "area": "North Side",
+      "area": "Williamsburg: North Side",
       "cuisine": "Italian",
       "tier": "indie",
       "confidence": "high",
@@ -314,7 +314,7 @@
       "address": "567 Union Ave",
       "lat": 40.717549,
       "lng": -73.952465,
-      "area": "North Side",
+      "area": "Williamsburg: North Side",
       "cuisine": "Italian",
       "tier": "indie",
       "confidence": "medium",
@@ -341,7 +341,7 @@
       "address": "329 Kent Ave",
       "lat": 40.713439,
       "lng": -73.966625,
-      "area": "Waterfront",
+      "area": "Williamsburg: Waterfront",
       "cuisine": "Italian",
       "tier": "indie",
       "confidence": "medium",
@@ -368,7 +368,7 @@
       "address": "305 Bedford Ave",
       "lat": 40.713458,
       "lng": -73.961748,
-      "area": "South Side",
+      "area": "Williamsburg: South Side",
       "cuisine": "Pizza",
       "tier": "indie",
       "confidence": "medium",
@@ -391,7 +391,7 @@
       "address": "254 S 2nd St",
       "lat": 40.711432,
       "lng": -73.957845,
-      "area": "South Side",
+      "area": "Williamsburg: South Side",
       "cuisine": "Pizza",
       "tier": "indie",
       "confidence": "medium",
@@ -414,7 +414,7 @@
       "address": "85 Broadway",
       "lat": 40.710704,
       "lng": -73.965613,
-      "area": "South Side",
+      "area": "Williamsburg: South Side",
       "cuisine": "American",
       "tier": "indie",
       "confidence": "high",
@@ -441,7 +441,7 @@
       "address": "355 Metropolitan Ave",
       "lat": 40.714286,
       "lng": -73.956045,
-      "area": "South Side",
+      "area": "Williamsburg: South Side",
       "cuisine": "Steakhouse",
       "tier": "indie",
       "confidence": "medium",
@@ -464,7 +464,7 @@
       "address": "298 Bedford Ave",
       "lat": 40.714268,
       "lng": -73.961653,
-      "area": "South Side",
+      "area": "Williamsburg: South Side",
       "cuisine": "Bar & wine",
       "tier": "indie",
       "confidence": "high",
@@ -491,7 +491,7 @@
       "address": "295 Grand St",
       "lat": 40.713168,
       "lng": -73.957246,
-      "area": "South Side",
+      "area": "Williamsburg: South Side",
       "cuisine": "Bar & wine",
       "tier": "indie",
       "confidence": "high",
@@ -514,7 +514,7 @@
       "address": "47 S 5th St",
       "lat": 40.712395,
       "lng": -73.966467,
-      "area": "Waterfront",
+      "area": "Williamsburg: Waterfront",
       "cuisine": "Tasting menu",
       "tier": "indie",
       "confidence": "medium",
@@ -541,7 +541,7 @@
       "address": "166 S 4th St",
       "lat": 40.711184,
       "lng": -73.961371,
-      "area": "South Side",
+      "area": "Williamsburg: South Side",
       "cuisine": "American",
       "tier": "indie",
       "confidence": "high",
@@ -568,7 +568,7 @@
       "address": "348 Wythe Ave",
       "lat": 40.71416,
       "lng": -73.965365,
-      "area": "Waterfront",
+      "area": "Williamsburg: Waterfront",
       "cuisine": "American",
       "tier": "indie",
       "confidence": "medium",
@@ -591,7 +591,7 @@
       "address": "69 Grand St",
       "lat": 40.716062,
       "lng": -73.964685,
-      "area": "Waterfront",
+      "area": "Williamsburg: Waterfront",
       "cuisine": "Coffee",
       "tier": "indie",
       "confidence": "medium",
@@ -614,7 +614,7 @@
       "address": "310 S 4th St",
       "lat": 40.70916,
       "lng": -73.955742,
-      "area": "South Side",
+      "area": "Williamsburg: South Side",
       "cuisine": "Asian",
       "tier": "indie",
       "confidence": "high",
@@ -710,7 +710,7 @@
       "address": "97 Wythe Ave (Hoxton rooftop)",
       "lat": 40.720781,
       "lng": -73.958752,
-      "area": "Waterfront",
+      "area": "Williamsburg: Waterfront",
       "cuisine": "Middle Eastern",
       "tier": "indie",
       "confidence": "medium",
@@ -738,7 +738,7 @@
       "address": "111 N 12th St (William Vale, 22nd fl)",
       "lat": 40.722298,
       "lng": -73.956734,
-      "area": "Waterfront",
+      "area": "Williamsburg: Waterfront",
       "cuisine": "Bar & wine",
       "tier": "indie",
       "confidence": "medium",
@@ -765,7 +765,7 @@
       "address": "661 Driggs Ave",
       "lat": 40.71452,
       "lng": -73.95889,
-      "area": "North Side",
+      "area": "Williamsburg: North Side",
       "cuisine": "Bakery & sweets",
       "tier": "pe",
       "confidence": "high",
@@ -797,7 +797,7 @@
       "address": "214 Berry St",
       "lat": 40.716233,
       "lng": -73.96182,
-      "area": "North Side",
+      "area": "Williamsburg: North Side",
       "cuisine": "Bakery & sweets",
       "tier": "pe",
       "confidence": "medium",
@@ -824,7 +824,7 @@
       "address": "364 Grand St",
       "lat": 40.712175,
       "lng": -73.955707,
-      "area": "South Side",
+      "area": "Williamsburg: South Side",
       "cuisine": "Pizza",
       "tier": "pe",
       "confidence": "medium",
@@ -852,7 +852,7 @@
       "address": "79 N 11th St",
       "lat": 40.72164,
       "lng": -73.957574,
-      "area": "Waterfront",
+      "area": "Williamsburg: Waterfront",
       "cuisine": "Bar & wine",
       "tier": "corp",
       "confidence": "high",
@@ -906,7 +906,7 @@
       "address": "150 Wythe Ave",
       "lat": 40.72003,
       "lng": -73.960104,
-      "area": "Waterfront",
+      "area": "Williamsburg: Waterfront",
       "cuisine": "Bakery & sweets",
       "tier": "indie",
       "confidence": "medium",
@@ -929,7 +929,7 @@
       "address": "133 Wythe Ave",
       "lat": 40.71973,
       "lng": -73.95995,
-      "area": "Waterfront",
+      "area": "Williamsburg: Waterfront",
       "cuisine": "Middle Eastern",
       "tier": "indie",
       "confidence": "high",
@@ -947,6 +947,289 @@
         {
           "label": "Brooklyn Magazine: Mogador comes to Williamsburg",
           "url": "https://www.bkmag.com/?p=251"
+        }
+      ]
+    },
+    {
+      "id": "maman-greenpoint",
+      "name": "Maman",
+      "address": "80 Kent St",
+      "lat": 40.730229,
+      "lng": -73.957917,
+      "area": "Greenpoint",
+      "cuisine": "Coffee",
+      "tier": "pe",
+      "confidence": "high",
+      "owner": "Founders Elisa Marshall & Benjamin Sormonte (about 50%), with private-equity firm TriSpan",
+      "chain": [
+        "Maman",
+        "TriSpan (private equity, 2020; founders kept ~50%)",
+        "New PE round to scale across North America (2026)"
+      ],
+      "note": "The French-style bakery-café chain took $10–20M from private-equity firm TriSpan in 2020, with the founders keeping a controlling share. In 2026 it raised new private-equity money to keep expanding across North America.",
+      "sources": [
+        {
+          "label": "CNBC (via TriSpan): Maman's growth and TriSpan deal",
+          "url": "https://www.trispanllp.com/trispan-core/core-content/wp-content/core-media/2024/06/Maman-CNBC-Article-2024-vF.pdf"
+        },
+        {
+          "label": "World Coffee Portal: Maman secures new PE investment (May 2026)",
+          "url": "https://www.worldcoffeeportal.com/news/new-yorks-maman-secures-new-investment-to-accelerate-growth/"
+        },
+        {
+          "label": "NYC Tourism: Maman Greenpoint (80 Kent St)",
+          "url": "https://www.nyctourism.com/es/restaurants/maman1/"
+        }
+      ]
+    },
+    {
+      "id": "van-leeuwen-greenpoint",
+      "name": "Van Leeuwen Ice Cream",
+      "address": "620 Manhattan Ave",
+      "lat": 40.723619,
+      "lng": -73.950434,
+      "area": "Greenpoint",
+      "cuisine": "Bakery & sweets",
+      "tier": "pe",
+      "confidence": "medium",
+      "owner": "Founders Ben & Pete Van Leeuwen and Laura O'Neill, with minority investors Strand Equity and NextWorld Evergreen",
+      "chain": [
+        "Van Leeuwen Ice Cream",
+        "Strand Equity (growth equity, 2018)",
+        "NextWorld Evergreen (Series B lead, 2020)"
+      ],
+      "note": "The brand was born in Greenpoint as an ice-cream truck. Its growth since then has been funded by growth-equity and fund investors.",
+      "sources": [
+        {
+          "label": "Nosh: Strand Equity invests (2018)",
+          "url": "https://www.nosh.com/news/2018/van-leeuwen-ice-cream-scoops-investment-strand-equity"
+        },
+        {
+          "label": "Business Wire: NextWorld leads Series B (2020)",
+          "url": "https://www.businesswire.com/news/home/20200227005271/en/NextWorld-Leads-Series-B-Investment-in-Van-Leeuwen-Ice-Cream"
+        },
+        {
+          "label": "What Now NY: Van Leeuwen doubling up in Greenpoint",
+          "url": "https://whatnow.com/?p=152047"
+        }
+      ]
+    },
+    {
+      "id": "sweetgreen-greenpoint",
+      "name": "Sweetgreen",
+      "address": "723 Manhattan Ave",
+      "lat": 40.72573,
+      "lng": -73.952535,
+      "area": "Greenpoint",
+      "cuisine": "Fast casual",
+      "tier": "corp",
+      "confidence": "high",
+      "owner": "Sweetgreen, Inc. (NYSE: SG)",
+      "chain": [
+        "Sweetgreen",
+        "Public company (NYSE: SG)"
+      ],
+      "note": "This store took over the old Meserole Theater / \"Disco Ball\" Rite Aid space, next door to Peter Pan Donuts.",
+      "sources": [
+        {
+          "label": "Wikipedia: Sweetgreen",
+          "url": "https://en.wikipedia.org/wiki/Sweetgreen"
+        },
+        {
+          "label": "Greenpointers: Sweetgreen takes the Rite Aid space",
+          "url": "https://greenpointers.com/2024/07/18/sweetgreen-is-coming-to-greenpoint-and-taking-over-former-disco-ball-rite-aid-space/"
+        }
+      ]
+    },
+    {
+      "id": "peter-pan-donut",
+      "name": "Peter Pan Donut & Pastry Shop",
+      "address": "727 Manhattan Ave",
+      "lat": 40.726052,
+      "lng": -73.95232,
+      "area": "Greenpoint",
+      "cuisine": "Bakery & sweets",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "The Siafakas family",
+      "chain": [
+        "Peter Pan Donut & Pastry",
+        "Siafakas family (since 1993)"
+      ],
+      "note": "A Greenpoint doughnut counter run by Donna Siafakas and her sons from 1993. The staff pledged to carry on after her death.",
+      "sources": [
+        {
+          "label": "News 12: Beloved Greenpoint doughnut shop owner dies",
+          "url": "https://newyork.news12.com/beloved-greenpoint-doughnut-shop-owner-dies-at-69-leaving-community-in-mourning"
+        }
+      ]
+    },
+    {
+      "id": "paulie-gees-slice",
+      "name": "Paulie Gee's Slice Shop",
+      "address": "110 Franklin St",
+      "lat": 40.728376,
+      "lng": -73.957096,
+      "area": "Greenpoint",
+      "cuisine": "Pizza",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "Paulie Giannone",
+      "chain": [
+        "Paulie Gee's Slice Shop",
+        "Owner-operated (Paulie Giannone)"
+      ],
+      "note": "A retro slice joint from Paulie Gee himself. The original Greenpoint Ave restaurant reopened in 2026 as Me & Paul's.",
+      "sources": [
+        {
+          "label": "Brooklyn Eagle: Paulie Gee's owner opening slice shop",
+          "url": "https://www.brooklyneagle.com/articles/2018/08/22/paulie-gees-owner-opening-greenpoint-slice-shop-this-month/"
+        },
+        {
+          "label": "Greenpointers: original reopens as Me & Paul's (2026)",
+          "url": "https://greenpointers.com/2026/04/30/paulie-gees-original-restaurant-reopens-today-as-me-and-pauls/"
+        }
+      ]
+    },
+    {
+      "id": "frankels",
+      "name": "Frankel's Delicatessen",
+      "address": "631 Manhattan Ave",
+      "lat": 40.723834,
+      "lng": -73.951048,
+      "area": "Greenpoint",
+      "cuisine": "American",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "Brothers Alex & Zach Frankel (with friends-and-family backers like El-P)",
+      "chain": [
+        "Frankel's",
+        "Owner-operated (Frankel brothers)"
+      ],
+      "note": "A Jewish deli and appetizing shop on the Greenpoint/Williamsburg line. Its backers are friends and musicians, not funds.",
+      "sources": [
+        {
+          "label": "JTA: the coolest new Jewish deli",
+          "url": "https://www.jta.org/2016/04/07/united-states/this-new-jewish-deli-is-the-coolest-restaurant-in-new-york-city"
+        }
+      ]
+    },
+    {
+      "id": "chez-ma-tante",
+      "name": "Chez Ma Tante",
+      "address": "90 Calyer St",
+      "lat": 40.726889,
+      "lng": -73.957595,
+      "area": "Greenpoint",
+      "cuisine": "American",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "Chefs Aidan O'Neal & Jake Leiber",
+      "chain": [
+        "Chez Ma Tante",
+        "Chef-owned"
+      ],
+      "note": "Famous for its pancakes, \"owned and operated by two rising star chefs.\"",
+      "sources": [
+        {
+          "label": "Resy: 15 questions with Chez Ma Tante's owners",
+          "url": "https://blog.resy.com/2018/06/15-questions-interview-chefs-chez-ma-tante/"
+        },
+        {
+          "label": "Greenpointers: reopening at 90 Calyer St (2024)",
+          "url": "https://greenpointers.com/2024/07/02/greenpoints-chez-ma-tante-will-reopen-on-monday"
+        }
+      ]
+    },
+    {
+      "id": "di-an-di",
+      "name": "Di An Di",
+      "address": "68 Greenpoint Ave",
+      "lat": 40.729583,
+      "lng": -73.958256,
+      "area": "Greenpoint",
+      "cuisine": "Asian",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "Chef Dennis Ngo and managing partner Kim Hoang",
+      "chain": [
+        "Di An Di",
+        "Owner-operated"
+      ],
+      "note": "A Vietnamese restaurant opened in 2018 and run by its chef-owner and partner.",
+      "sources": [
+        {
+          "label": "Resy: Behind the scenes at Di An Di",
+          "url": "https://blog.resy.com/?p=14541"
+        }
+      ]
+    },
+    {
+      "id": "grimm-taproom",
+      "name": "Grimm Artisanal Ales",
+      "address": "990 Metropolitan Ave",
+      "lat": 40.714284,
+      "lng": -73.936521,
+      "area": "East Williamsburg",
+      "cuisine": "Bar & wine",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "Joe & Lauren Grimm",
+      "chain": [
+        "Grimm Artisanal Ales",
+        "Founder-owned (Joe & Lauren Grimm)"
+      ],
+      "note": "The husband-and-wife brewery opened its East Williamsburg brewery and taproom in 2018. In 2026 they opened Grimm Tavern in Prospect Heights.",
+      "sources": [
+        {
+          "label": "Grand Army Gazette: Grimm Tavern opens",
+          "url": "https://grandarmygazette.substack.com/p/grimm-tavern-opens-with-a-dinosaur"
+        }
+      ]
+    },
+    {
+      "id": "bunker",
+      "name": "Bunker Vietnamese",
+      "address": "99 Scott Ave",
+      "lat": 40.710578,
+      "lng": -73.923404,
+      "area": "East Williamsburg",
+      "cuisine": "Asian",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "Jimmy Tu",
+      "chain": [
+        "Bunker",
+        "Owner-operated (Jimmy Tu)"
+      ],
+      "note": "A Vietnamese street-food spot that moved from Ridgewood to the East Williamsburg industrial zone.",
+      "sources": [
+        {
+          "label": "Bushwick Daily: Bunker moves to East Williamsburg",
+          "url": "https://bushwickdaily.com/restaurants/4291-bunker-vietnamese-east-williamsburg-relocation"
+        }
+      ]
+    },
+    {
+      "id": "win-son-bakery",
+      "name": "Win Son Bakery",
+      "address": "164 Graham Ave",
+      "lat": 40.707225,
+      "lng": -73.942914,
+      "area": "East Williamsburg",
+      "cuisine": "Bakery & sweets",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "Josh Ku & Trigg Brown, with Jesse Shapell",
+      "chain": [
+        "Win Son Bakery",
+        "Owner-operated (Win Son team)"
+      ],
+      "note": "Win Son's daytime bakery-café, across Graham Ave from the restaurant.",
+      "sources": [
+        {
+          "label": "Time Out: Win Son Bakery",
+          "url": "https://timeout.com/newyork/restaurants/win-son-bakery"
         }
       ]
     }

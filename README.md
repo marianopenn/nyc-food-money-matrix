@@ -1,6 +1,6 @@
 # NYC Food Matrix
 
-A map of Williamsburg, Brooklyn restaurants, cafés and bars, labelled by who actually owns them:
+A map of North Brooklyn (Williamsburg, East Williamsburg and Greenpoint) restaurants, cafés and bars, labelled by who actually owns them:
 
 - **$ PE-backed**: a private-equity or growth-equity firm owns the brand or holds a reported stake (including franchised chains whose brand sits with a buyout fund).
 - **C Corp & VC**: owned by a publicly traded company, or scaling on venture rounds.
@@ -8,7 +8,7 @@ A map of Williamsburg, Brooklyn restaurants, cafés and bars, labelled by who ac
 
 Every entry cites its sources, shows a "follow the money" ownership chain, and has a confidence rating. Tapping a PE or corporate spot suggests the nearest independent alternatives.
 
-The idea comes from the [London Food Money Matrix](https://london-food-money-matrix.vercel.app). This is a separate implementation for NYC, starting with Williamsburg.
+The idea comes from the [London Food Money Matrix](https://london-food-money-matrix.vercel.app). This is a separate implementation for NYC, starting with North Brooklyn.
 
 ## Run locally
 
