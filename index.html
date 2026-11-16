@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Who Owns The Block: Williamsburg</title>
+  <meta name="description" content="Which Williamsburg, Brooklyn restaurants and cafés are private-equity backed, corporate or VC funded, or independent. Every entry is sourced.">
+  <meta property="og:title" content="Who Owns The Block: Williamsburg">
+  <meta property="og:description" content="Find out whether your Williamsburg spot is PE-backed before you go, and find an independent one nearby.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23141414'/%3E%3Ccircle cx='16' cy='16' r='11' fill='%23ff3b1f'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='900' font-size='16' text-anchor='middle' fill='%23141414'%3E$%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="masthead">
+    <div class="tape" aria-hidden="true"></div>
+    <div class="masthead-inner">
+      <p class="kicker">Brooklyn&nbsp;/&nbsp;11211&nbsp;·&nbsp;11249&nbsp;·&nbsp;11206</p>
+      <h1>Who owns<br><span class="hl">the block?</span></h1>
+      <p class="dek">Williamsburg restaurants, cafés and bars, sorted by who really owns them. Check before you spend, and find an independent spot around the corner.</p>
+    </div>
+    <div class="stats" role="group" aria-label="Filter by ownership">
+      <button class="stat" data-tier="pe" aria-pressed="false">
+        <span class="bullet pe">$</span>
+        <span class="num" id="count-pe">0</span>
+        <span class="lbl">PE-backed</span>
+      </button>
+      <button class="stat" data-tier="corp" aria-pressed="false">
+        <span class="bullet corp">C</span>
+        <span class="num" id="count-corp">0</span>
+        <span class="lbl">Corp &amp; VC</span>
+      </button>
+      <button class="stat" data-tier="indie" aria-pressed="false">
+        <span class="bullet indie">I</span>
+        <span class="num" id="count-indie">0</span>
+        <span class="lbl">Independent</span>
+      </button>
+    </div>
+    <p class="hint">Tap a number to filter. Tap it again to clear.</p>
+  </header>
+
+  <main class="board">
+    <section class="map-wrap" aria-label="Map">
+      <div id="map"></div>
+      <div class="legend" aria-hidden="true">
+        <span><i class="dot pe"></i>PE</span>
+        <span><i class="dot corp"></i>Corp/VC</span>
+        <span><i class="dot indie"></i>Indie</span>
+      </div>
+    </section>
+
+    <section class="side" aria-label="Places">
+      <div class="controls">
+        <label class="sr" for="q">Search</label>
+        <input id="q" type="search" placeholder="Search a name, street or owner…" autocomplete="off">
+        <div class="selects">
+          <label class="sr" for="area">Area</label>
+          <select id="area"><option value="">All areas</option></select>
+          <label class="sr" for="cuisine">Food</label>
+          <select id="cuisine"><option value="">All food</option></select>
+        </div>
+      </div>
+
+      <article id="detail" class="detail" hidden></article>
+
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+      <ol id="list" class="list"></ol>
+    </section>
+  </main>
+
+  <section class="method" id="method">
+    <h2>How we call it</h2>
+    <div class="cols">
+      <div>
+        <h3><span class="bullet pe sm">$</span> PE-backed</h3>
+        <p>A private-equity or growth-equity firm owns the brand or holds a reported stake, directly or through a holding company. That includes franchised chains: a Dunkin' may be run by a local franchisee, but the brand and its royalties sit with a buyout fund.</p>
+      </div>
+      <div>
+        <h3><span class="bullet corp sm">C</span> Corp &amp; VC</h3>
+        <p>A publicly traded company owns it, or it's scaling on venture-capital rounds. That's big money with different incentives than a buyout fund.</p>
+      </div>
+      <div>
+        <h3><span class="bullet indie sm">I</span> Independent</h3>
+        <p>Run by its founders, a family or a local operator, with no institutional owner turned up in public reporting. A small local group like Andrew Tarlow's still counts. Mixed cases are flagged in the notes.</p>
+      </div>
+    </div>
+    <p class="fine">Every entry links to its sources. "Confidence" reflects how directly those sources show the ownership. Ownership changes, and some stakes are never disclosed. If you spot something wrong or missing, <a href="https://github.com/marianopenn/nyc-food-money-matrix/issues/new" target="_blank" rel="noopener">open an issue</a> with a link. Last reviewed <span id="reviewed"></span>.</p>
+  </section>
+
+  <footer class="foot">
+    <span>Williamsburg first. The rest of the five boroughs next.</span>
+    <span>Map © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a> · Geocoding: NYC Planning GeoSearch</span>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,563 @@
+{
+  "neighborhood": "Williamsburg, Brooklyn",
+  "lastReviewed": "2026-11-16",
+  "tiers": {
+    "pe": "Private equity / growth equity backed",
+    "corp": "Public company or venture-backed",
+    "indie": "Independent (owner-operated, no outside institutional owner found)"
+  },
+  "places": [
+    {
+      "id": "levain-williamsburg",
+      "name": "Levain Bakery",
+      "address": "164 N 4th St",
+      "lat": 40.715689, "lng": -73.959178,
+      "area": "North Side",
+      "cuisine": "Bakery & sweets",
+      "tier": "pe",
+      "confidence": "medium",
+      "owner": "Founders Pam Weekes & Connie McDonald, with growth-equity firm Stripes",
+      "chain": ["Levain Bakery", "Stripes (growth equity, 2018)"],
+      "note": "Deal databases record a 2018 investment by New York growth-equity firm Stripes that funded Levain's expansion beyond its Upper West Side original; the founders remain co-owners. The stake size isn't public. The Williamsburg shop opened July 2020.",
+      "sources": [
+        { "label": "Mergr: Stripes / Levain deal (2018)", "url": "https://mergr.com/transaction/stripes-acquires-levain-bakery-cookie-company" },
+        { "label": "Brooklyn Paper: Levain opens in Williamsburg", "url": "https://www.brooklynpaper.com/levain-bakery-to-open-first-brooklyn-location-in-williamsburg" }
+      ]
+    },
+    {
+      "id": "blue-bottle-williamsburg",
+      "name": "Blue Bottle Coffee",
+      "address": "76 N 4th St",
+      "lat": 40.717295, "lng": -73.961643,
+      "area": "North Side",
+      "cuisine": "Coffee",
+      "tier": "pe",
+      "confidence": "high",
+      "owner": "Centurium Capital (private equity; also the largest shareholder of Luckin Coffee)",
+      "chain": ["Blue Bottle Coffee", "Nestlé (majority 2017–2026)", "Centurium Capital (PE, 2026)"],
+      "note": "Nestlé bought a majority stake in 2017 and sold the business to Chinese private-equity firm Centurium Capital in April 2026.",
+      "sources": [
+        { "label": "Daily Coffee News: Nestlé confirms sale to Centurium (Apr 2026)", "url": "https://dailycoffeenews.com/2026/04/24/nestle-confirms-blue-bottle-sale-to-luckins-largest-shareholder/" },
+        { "label": "Inside Retail Asia: sale completed", "url": "https://insideretail.asia/2026/04/27/nestle-completes-blue-bottle-sale-to-chinas-centurium-capital/" }
+      ]
+    },
+    {
+      "id": "van-leeuwen-wythe",
+      "name": "Van Leeuwen Ice Cream",
+      "address": "204 Wythe Ave",
+      "lat": 40.71841, "lng": -73.962644,
+      "area": "Waterfront",
+      "cuisine": "Bakery & sweets",
+      "tier": "pe",
+      "confidence": "medium",
+      "owner": "Founders Ben & Pete Van Leeuwen and Laura O'Neill, with minority investors Strand Equity and NextWorld Evergreen",
+      "chain": ["Van Leeuwen Ice Cream", "Strand Equity (growth equity, 2018)", "NextWorld Evergreen (Series B lead, 2020)"],
+      "note": "This is a Brooklyn-born brand that took institutional money: a 2018 minority investment led by growth-equity firm Strand Equity, then an $18.7M Series B led by NextWorld Evergreen in 2020.",
+      "sources": [
+        { "label": "Nosh: Strand Equity invests (2018)", "url": "https://www.nosh.com/news/2018/van-leeuwen-ice-cream-scoops-investment-strand-equity" },
+        { "label": "Business Wire: NextWorld leads Series B (2020)", "url": "https://www.businesswire.com/news/home/20200227005271/en/NextWorld-Leads-Series-B-Investment-in-Van-Leeuwen-Ice-Cream" },
+        { "label": "DNAinfo: Wythe Ave flagship", "url": "https://www.dnainfo.com/new-york/20150304/williamsburg/van-leeuwen-opening-huge-flagship-ice-cream-parlor-on-wythe-avenue" }
+      ]
+    },
+    {
+      "id": "sweet-chick-bedford",
+      "name": "Sweet Chick",
+      "address": "164 Bedford Ave",
+      "lat": 40.718396, "lng": -73.957376,
+      "area": "North Side",
+      "cuisine": "American",
+      "tier": "pe",
+      "confidence": "high",
+      "owner": "Founders Table Restaurant Group, which is financed by L Catterton",
+      "chain": ["Sweet Chick", "Founders Table Restaurant Group (Series A, 2022)", "L Catterton (private equity)"],
+      "note": "The Williamsburg original, opened in 2012. In 2022 it took Series A money from Founders Table, the Chopt/Dos Toros holding company that private-equity firm L Catterton financed.",
+      "sources": [
+        { "label": "PR Newswire: Sweet Chick partners with Founders Table (2022)", "url": "https://prnewswire.com/news-releases/beloved-chicken-and-waffle-restaurant-sweet-chick-partners-with-founders-table-to-fuel-expansion-and-growth-301550621.html" },
+        { "label": "NRN: Founders Table deal financed by L Catterton", "url": "https://nrn.com/mergers-acquisitions/chopt-creative-salad-co-to-buy-dos-toros-taqueria-in-deal-financed-by-l-catterton" },
+        { "label": "DNAinfo: Sweet Chick opens on Bedford", "url": "https://www.dnainfo.com/new-york/20121203/williamsburg/sweet-chick-dish-out-chicken-waffles-on-bedford-avenue" }
+      ]
+    },
+    {
+      "id": "dos-toros-bedford",
+      "name": "Dos Toros Taqueria",
+      "address": "189 Bedford Ave",
+      "lat": 40.717509, "lng": -73.957783,
+      "area": "North Side",
+      "cuisine": "Fast casual",
+      "tier": "pe",
+      "confidence": "high",
+      "owner": "Founders Table Restaurant Group (Chopt's parent), financed by L Catterton",
+      "chain": ["Dos Toros", "Founders Table Restaurant Group", "L Catterton (private equity)"],
+      "note": "Chopt bought Dos Toros in 2020 and formed the Founders Table holding company. NRN reported the deal as \"financed by private equity firm L Catterton.\"",
+      "sources": [
+        { "label": "NRN: Chopt buys Dos Toros, financed by L Catterton (Jan 2020)", "url": "https://nrn.com/mergers-acquisitions/chopt-creative-salad-co-to-buy-dos-toros-taqueria-in-deal-financed-by-l-catterton" },
+        { "label": "Dos Toros: Bedford location page", "url": "https://www.dostoros.com/locations/ny/bedford" }
+      ]
+    },
+    {
+      "id": "dunkin-bedford",
+      "name": "Dunkin'",
+      "address": "182 Bedford Ave",
+      "lat": 40.717846, "lng": -73.957965,
+      "area": "North Side",
+      "cuisine": "Coffee",
+      "tier": "pe",
+      "confidence": "high",
+      "owner": "Inspire Brands, which is owned by Roark Capital (store likely franchisee-operated)",
+      "chain": ["Dunkin' (franchise)", "Inspire Brands", "Roark Capital (private equity)"],
+      "note": "Roark-backed Inspire Brands took Dunkin' private for $11.3B in 2020. Individual stores are usually run by franchisees, but the brand and its royalties go up to PE.",
+      "sources": [
+        { "label": "PE Hub: Inspire completes Dunkin' buyout", "url": "https://pehub.com/roark-capital-backed-inspire-brands-completes-11-3bn-dunkin-brands-buyout" },
+        { "label": "Store listing: 182 Bedford Ave", "url": "https://directory.yext.com/en/dunkin-244436291" }
+      ]
+    },
+    {
+      "id": "dunkin-grand",
+      "name": "Dunkin'",
+      "address": "809 Grand St",
+      "lat": 40.712159, "lng": -73.941017,
+      "area": "East Williamsburg",
+      "cuisine": "Coffee",
+      "tier": "pe",
+      "confidence": "high",
+      "owner": "Inspire Brands, which is owned by Roark Capital (store likely franchisee-operated)",
+      "chain": ["Dunkin' (franchise)", "Inspire Brands", "Roark Capital (private equity)"],
+      "note": "Same parent as the Bedford Ave store: Roark Capital, through Inspire Brands.",
+      "sources": [
+        { "label": "Restaurant Business: Inspire completes $11.3B Dunkin' deal", "url": "https://www.restaurantbusinessonline.com/financing/inspire-brands-completes-its-113b-acquisition-dunkin" },
+        { "label": "Store listing: 809 Grand St", "url": "https://directory.yext.com/en/dunkin-244553803" }
+      ]
+    },
+    {
+      "id": "subway-union",
+      "name": "Subway",
+      "address": "196 Union Ave",
+      "lat": 40.706295, "lng": -73.950051,
+      "area": "South Side",
+      "cuisine": "Fast casual",
+      "tier": "pe",
+      "confidence": "high",
+      "owner": "Roark Capital (store franchisee-operated)",
+      "chain": ["Subway (franchise)", "Roark Capital (private equity, 2024)"],
+      "note": "Roark Capital closed its roughly $9.6B purchase of Subway in 2024. Roark is the same PE firm behind Dunkin', Arby's and Jimmy John's.",
+      "sources": [
+        { "label": "NRN: Roark completes purchase of Subway", "url": "https://www.nrn.com/quick-service/roark-capital-completes-its-purchase-of-subway" },
+        { "label": "Subway: 196 Union Ave store page", "url": "https://restaurants.subway.com/united-states/ny/brooklyn/196-union-ave" }
+      ]
+    },
+    {
+      "id": "blank-street-bedford",
+      "name": "Blank Street",
+      "address": "186 Bedford Ave",
+      "lat": 40.71774, "lng": -73.95816,
+      "area": "North Side",
+      "cuisine": "Coffee",
+      "tier": "corp",
+      "confidence": "high",
+      "owner": "Venture-backed (General Catalyst and Tiger Global led its $25M Series A)",
+      "chain": ["Blank Street", "Venture capital: General Catalyst, Tiger Global and others"],
+      "note": "Blank Street started as a cart in Williamsburg in 2020 and opened its first brick-and-mortar shop here by the Bedford Ave L. VC money then scaled it across NYC, London and beyond.",
+      "sources": [
+        { "label": "TechCrunch: General Catalyst & Tiger Global lead $25M", "url": "https://techcrunch.com/2021/10/13/general-catalyst-tiger-global-lead-25m-investment-into-blank-streets-micro-specialty-coffee-shops" },
+        { "label": "Brooklyn Paper: first brick-and-mortar shop", "url": "https://www.brooklynpaper.com/blank-street-opens-first-brick-and-mortar-shop-in-brooklyn" }
+      ]
+    },
+    {
+      "id": "sweetgreen-n4th",
+      "name": "Sweetgreen",
+      "address": "162 N 4th St",
+      "lat": 40.715689, "lng": -73.959178,
+      "area": "North Side",
+      "cuisine": "Fast casual",
+      "tier": "corp",
+      "confidence": "high",
+      "owner": "Sweetgreen, Inc. (NYSE: SG)",
+      "chain": ["Sweetgreen", "Public company (NYSE: SG)"],
+      "note": "Sweetgreen was VC-funded before its 2021 IPO and is now publicly traded. This store opened across from Whole Foods in 2014.",
+      "sources": [
+        { "label": "Wikipedia: Sweetgreen", "url": "https://en.wikipedia.org/wiki/Sweetgreen" },
+        { "label": "Bedford + Bowery: Williamsburg outpost", "url": "https://bedfordandbowery.com/2014/02/sweetgreen-is-opening-a-williamsburg-outpost-across-from-whole-foods/" }
+      ]
+    },
+    {
+      "id": "shake-shack-berry",
+      "name": "Shake Shack",
+      "address": "160 Berry St",
+      "lat": 40.717438, "lng": -73.960645,
+      "area": "North Side",
+      "cuisine": "Fast casual",
+      "tier": "corp",
+      "confidence": "high",
+      "owner": "Shake Shack Inc. (NYSE: SHAK)",
+      "chain": ["Shake Shack", "Public company (NYSE: SHAK)"],
+      "note": "Publicly traded since 2015. The Williamsburg Shack opened in 2018 in Blue Bottle's old Berry St space.",
+      "sources": [
+        { "label": "Wikipedia: Shake Shack", "url": "https://en.wikipedia.org/wiki/Shake_Shack" },
+        { "label": "UrbanDaddy: Shake Shack lands in Williamsburg", "url": "https://urbandaddy.com/articles/42651/new-york/shake-shack-lands-in-williamsburg-at-long-last" }
+      ]
+    },
+    {
+      "id": "cava-n4th",
+      "name": "CAVA",
+      "address": "174 N 4th St",
+      "lat": 40.715354, "lng": -73.958736,
+      "area": "North Side",
+      "cuisine": "Fast casual",
+      "tier": "corp",
+      "confidence": "high",
+      "owner": "CAVA Group, Inc. (NYSE: CAVA)",
+      "chain": ["CAVA", "Public company (NYSE: CAVA)"],
+      "note": "This Mediterranean chain went public in 2023 after years of private-equity and venture funding.",
+      "sources": [
+        { "label": "Wikipedia: CAVA", "url": "https://en.wikipedia.org/wiki/Cava_Group" },
+        { "label": "Store listing: 174 N 4th St", "url": "https://frankiapp.com/business/cava-brooklyn-n-4th-st-95172" }
+      ]
+    },
+    {
+      "id": "chipotle-n4th",
+      "name": "Chipotle",
+      "address": "130 N 4th St",
+      "lat": 40.716452, "lng": -73.960401,
+      "area": "North Side",
+      "cuisine": "Fast casual",
+      "tier": "corp",
+      "confidence": "high",
+      "owner": "Chipotle Mexican Grill, Inc. (NYSE: CMG)",
+      "chain": ["Chipotle", "Public company (NYSE: CMG)"],
+      "note": "Chipotle is publicly traded and company-operated, not franchised.",
+      "sources": [
+        { "label": "Wikipedia: Chipotle Mexican Grill", "url": "https://en.wikipedia.org/wiki/Chipotle_Mexican_Grill" },
+        { "label": "Store listing: 130 N 4th St", "url": "https://phoenix.aws.mapquest.com/us/new-york/chipotle-williamsburg-ny-371213072" }
+      ]
+    },
+    {
+      "id": "peter-luger",
+      "name": "Peter Luger Steak House",
+      "address": "178 Broadway",
+      "lat": 40.709769, "lng": -73.962584,
+      "area": "South Side",
+      "cuisine": "Steakhouse",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "The Forman and Sloyer families (Amy Rubenstein, Marilyn Spiera)",
+      "chain": ["Peter Luger", "Family-owned since the 1950 Forman purchase"],
+      "note": "Open since 1887 under the Williamsburg Bridge. Ownership passed to the families of Sol Forman and Seymour Sloyer in 2001.",
+      "sources": [
+        { "label": "Wikipedia: Peter Luger Steak House", "url": "https://en.wikipedia.org/wiki/Peter_Luger_Steak_House" }
+      ]
+    },
+    {
+      "id": "bamontes",
+      "name": "Bamonte's",
+      "address": "32 Withers St",
+      "lat": 40.716495, "lng": -73.951208,
+      "area": "North Side",
+      "cuisine": "Italian",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "Anthony Bamonte and his daughters",
+      "chain": ["Bamonte's", "Bamonte family since 1900"],
+      "note": "Red-sauce Italian, run by the same family for four generations. Pasquale Bamonte opened it as Liberty Hall in 1900.",
+      "sources": [
+        { "label": "Wikipedia: Bamonte's", "url": "https://en.wikipedia.org/wiki/Bamonte%27s" }
+      ]
+    },
+    {
+      "id": "lilia",
+      "name": "Lilia",
+      "address": "567 Union Ave",
+      "lat": 40.717549, "lng": -73.952465,
+      "area": "North Side",
+      "cuisine": "Italian",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "Chef Missy Robbins and partner Sean Feeney",
+      "chain": ["Lilia", "Chef-owned (Missy Robbins)"],
+      "note": "Chef-owned pasta destination in a former auto-body shop. We found no outside institutional investor in public reporting.",
+      "sources": [
+        { "label": "NYC Tourism: Lilia", "url": "https://nyctourism.com/restaurants/lilia/" },
+        { "label": "Village Voice review", "url": "https://www.villagevoice.com/?p=408233" }
+      ]
+    },
+    {
+      "id": "misi",
+      "name": "Misi",
+      "address": "329 Kent Ave",
+      "lat": 40.713439, "lng": -73.966625,
+      "area": "Waterfront",
+      "cuisine": "Italian",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "Chef Missy Robbins and partner Sean Feeney",
+      "chain": ["Misi", "Chef-owned (Missy Robbins)"],
+      "note": "Lilia's sibling, on the ground floor of the Domino Sugar site. The building is big-developer real estate, but the restaurant is chef-owned.",
+      "sources": [
+        { "label": "Patch: Misi opening", "url": "https://patch.com/new-york/williamsburg/pasta-eatery-misi-open-williamsburg-month" },
+        { "label": "Michelin Guide: Misi opening", "url": "https://guide.michelin.com/us/en/article/dining-out/misi-restaurant-opening-missy-robbins-nyc" }
+      ]
+    },
+    {
+      "id": "fini-bedford",
+      "name": "Fini Pizza",
+      "address": "305 Bedford Ave",
+      "lat": 40.713458, "lng": -73.961748,
+      "area": "South Side",
+      "cuisine": "Pizza",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "Sean Feeney (Lilia / Misi partner)",
+      "chain": ["Fini Pizza", "Operator-owned (Sean Feeney)"],
+      "note": "A slice shop from the Lilia/Misi partner. It is now multi-unit, but we found no outside institutional owner.",
+      "sources": [
+        { "label": "Yahoo/Food & Wine: Sean Feeney opens Fini", "url": "https://sg.style.yahoo.com/sean-feeney-nyc-lilia-misi-113000337.html" }
+      ]
+    },
+    {
+      "id": "lindustrie",
+      "name": "L'Industrie Pizzeria",
+      "address": "254 S 2nd St",
+      "lat": 40.711432, "lng": -73.957845,
+      "area": "South Side",
+      "cuisine": "Pizza",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "Massimo Laveglia",
+      "chain": ["L'Industrie", "Owner-operated (Massimo Laveglia)"],
+      "note": "This is the 2017 flagship. Later Manhattan shops brought in the Saper brothers (ex-Eataly) as operating partners, which isn't institutional capital.",
+      "sources": [
+        { "label": "What Now NY: L'Industrie expansion", "url": "https://whatnow.com/?p=147315" }
+      ]
+    },
+    {
+      "id": "diner",
+      "name": "Diner",
+      "address": "85 Broadway",
+      "lat": 40.710704, "lng": -73.965613,
+      "area": "South Side",
+      "cuisine": "American",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "Andrew Tarlow",
+      "chain": ["Diner", "Andrew Tarlow (independent group)"],
+      "note": "A 1920s dining car that kicked off the Williamsburg restaurant boom in 1998. It anchors Tarlow's independent group, which also runs St. Anselm and the Wythe Hotel's restaurants.",
+      "sources": [
+        { "label": "Edible Brooklyn: Diner at 20", "url": "https://ediblebrooklyn.com/diner-brooklyn/" },
+        { "label": "Resy: How Andrew Tarlow built his Brooklyn empire", "url": "https://blog.resy.com/?p=16854" }
+      ]
+    },
+    {
+      "id": "st-anselm",
+      "name": "St. Anselm",
+      "address": "355 Metropolitan Ave",
+      "lat": 40.714286, "lng": -73.956045,
+      "area": "South Side",
+      "cuisine": "Steakhouse",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "Andrew Tarlow",
+      "chain": ["St. Anselm", "Andrew Tarlow (independent group)"],
+      "note": "A no-reservations grill from the Diner team.",
+      "sources": [
+        { "label": "Resy: Andrew Tarlow's restaurants", "url": "https://blog.resy.com/?p=16854" }
+      ]
+    },
+    {
+      "id": "maison-premiere",
+      "name": "Maison Premiere",
+      "address": "298 Bedford Ave",
+      "lat": 40.714268, "lng": -73.961653,
+      "area": "South Side",
+      "cuisine": "Bar & wine",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "Joshua Boissy & Krystof Zizka",
+      "chain": ["Maison Premiere", "Owner-operated (Boissy & Zizka)"],
+      "note": "Oyster and absinthe bar opened in 2011, still run by its two founders.",
+      "sources": [
+        { "label": "Fathom: Joshua Boissy interview", "url": "https://fathomaway.com/brooklyn-bio-joshua-boissy-maison-premiere/" },
+        { "label": "DNAinfo: Maison Premiere owners", "url": "https://www.dnainfo.com/new-york/20140925/greenpoint/maison-premiere-owners-opening-new-restaurant-near-mccarren-park" }
+      ]
+    },
+    {
+      "id": "four-horsemen",
+      "name": "The Four Horsemen",
+      "address": "295 Grand St",
+      "lat": 40.713168, "lng": -73.957246,
+      "area": "South Side",
+      "cuisine": "Bar & wine",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "James Murphy, Christina Topsøe and partners",
+      "chain": ["The Four Horsemen", "Owner-operated"],
+      "note": "Natural-wine bar opened in 2015 by LCD Soundsystem's James Murphy and friends.",
+      "sources": [
+        { "label": "BrooklynVegan: James Murphy opening a wine bar", "url": "https://www.brooklynvegan.com/james-murphy-is/" }
+      ]
+    },
+    {
+      "id": "aska",
+      "name": "Aska",
+      "address": "47 S 5th St",
+      "lat": 40.712395, "lng": -73.966467,
+      "area": "Waterfront",
+      "cuisine": "Tasting menu",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "Chef Fredrik Berselius",
+      "chain": ["Aska", "Chef-owned (Fredrik Berselius)"],
+      "note": "Two-Michelin-star Scandinavian tasting menu in an 1860s warehouse by the bridge.",
+      "sources": [
+        { "label": "Michelin Guide: Aska", "url": "https://guide.michelin.com/us/new-york/aska/restaurant" },
+        { "label": "Brooklyn Magazine: Aska rises from the ashes", "url": "https://www.bkmag.com/?p=50810" }
+      ]
+    },
+    {
+      "id": "pies-n-thighs",
+      "name": "Pies 'n' Thighs",
+      "address": "166 S 4th St",
+      "lat": 40.711184, "lng": -73.961371,
+      "area": "South Side",
+      "cuisine": "American",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "Sarah Sanneh & Carolyn Bane",
+      "chain": ["Pies 'n' Thighs", "Owner-operated (Sanneh & Bane)"],
+      "note": "Fried chicken and pie, run by its two founders since the 2000s.",
+      "sources": [
+        { "label": "Pies 'n' Thighs: About", "url": "https://piesnthighs.com/about" },
+        { "label": "Total Food Service: the duo persists", "url": "https://totalfood.com/pies-n-thighs-duo-persist-through-the-pandemic/" }
+      ]
+    },
+    {
+      "id": "sunday-in-brooklyn",
+      "name": "Sunday in Brooklyn",
+      "address": "348 Wythe Ave",
+      "lat": 40.71416, "lng": -73.965365,
+      "area": "Waterfront",
+      "cuisine": "American",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "Founding partners Jaime Young, Adam Landsman & Todd Enany",
+      "chain": ["Sunday in Brooklyn", "Owner-operated"],
+      "note": "Brunch institution and pantry on Wythe. We found no institutional investor.",
+      "sources": [
+        { "label": "Gothamist: Sunday in Brooklyn", "url": "https://api-prod.gothamist.com/food/sunday-in-brooklyn-is-williamsburgs-one-stop-dining-pantry-stocking-destination" }
+      ]
+    },
+    {
+      "id": "devocion",
+      "name": "Devoción",
+      "address": "69 Grand St",
+      "lat": 40.716062, "lng": -73.964685,
+      "area": "Waterfront",
+      "cuisine": "Coffee",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "Founder Steven Sutton",
+      "chain": ["Devoción", "Founder-owned (Steven Sutton)"],
+      "note": "Colombian farm-to-cup roaster in a skylit warehouse. We found no outside institutional owner.",
+      "sources": [
+        { "label": "Daily Coffee News: Devoción opens in Williamsburg", "url": "https://dailycoffeenews.com/2014/11/28/from-colombia-to-williamsburg-devocion-purports-new-levels-of-crop-to-cup-freshness" }
+      ]
+    },
+    {
+      "id": "shalom-japan",
+      "name": "Shalom Japan",
+      "address": "310 S 4th St",
+      "lat": 40.70916, "lng": -73.955742,
+      "area": "South Side",
+      "cuisine": "Asian",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "Chefs Aaron Israel & Sawako Okochi",
+      "chain": ["Shalom Japan", "Chef-owned (married couple)"],
+      "note": "Jewish-Japanese cooking from the husband-and-wife chef team.",
+      "sources": [
+        { "label": "Brownstoner: Shalom Japan", "url": "https://www.brownstoner.com/brooklyn-life/williamsburg-shalom-japan-restaurant-310-south-4th-street-book/" }
+      ]
+    },
+    {
+      "id": "kelloggs-diner",
+      "name": "Kellogg's Diner",
+      "address": "514 Metropolitan Ave",
+      "lat": 40.71384, "lng": -73.951825,
+      "area": "East Williamsburg",
+      "cuisine": "American",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "Restaurateur Louis Skibar (Coppelia, Toloache)",
+      "chain": ["Kellogg's Diner", "Independent restaurateur Louis Skibar"],
+      "note": "The 1928 diner went bankrupt in 2023 and reopened in 2024 under a local restaurateur, not a chain or fund.",
+      "sources": [
+        { "label": "Time Out: first look at the reopened Kellogg's", "url": "https://timeout.com/newyork/news/a-first-look-at-the-newly-reopened-kelloggs-diner-in-williamsburg-092324" },
+        { "label": "Greenpointers: bankrupt and for sale (2023)", "url": "https://greenpointers.com/2023/05/04/after-95-years-kelloggs-diner-is-bankrupt-and-for-sale/" }
+      ]
+    },
+    {
+      "id": "win-son",
+      "name": "Win Son",
+      "address": "159 Graham Ave",
+      "lat": 40.707458, "lng": -73.943501,
+      "area": "East Williamsburg",
+      "cuisine": "Asian",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "Josh Ku & Trigg Brown",
+      "chain": ["Win Son", "Owner-operated (Ku & Brown)"],
+      "note": "Taiwanese-American restaurant with a bakery across the street.",
+      "sources": [
+        { "label": "Brownstoner: Win Son's founders", "url": "https://www.brownstoner.com/brooklyn-life/win-son-taiwanese-american-restaurant-cookbook" }
+      ]
+    },
+    {
+      "id": "bonnies",
+      "name": "Bonnie's",
+      "address": "398 Manhattan Ave",
+      "lat": 40.717815, "lng": -73.946431,
+      "area": "East Williamsburg",
+      "cuisine": "Asian",
+      "tier": "indie",
+      "confidence": "high",
+      "owner": "Chef Calvin Eng",
+      "chain": ["Bonnie's", "Chef-owned (Calvin Eng)"],
+      "note": "Cantonese-American restaurant from a Win Son alum, named for his mother.",
+      "sources": [
+        { "label": "Wikipedia: Bonnie's", "url": "https://en.wikipedia.org/wiki/Bonnie%27s" }
+      ]
+    },
+    {
+      "id": "laser-wolf",
+      "name": "Laser Wolf",
+      "address": "97 Wythe Ave (Hoxton rooftop)",
+      "lat": 40.720781, "lng": -73.958752,
+      "area": "Waterfront",
+      "cuisine": "Middle Eastern",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "CookNSolo (Michael Solomonov & Steven Cook), an independent Philadelphia group",
+      "chain": ["Laser Wolf", "CookNSolo (independent group)", "Host building: The Hoxton, an Ennismore/Accor brand"],
+      "note": "Mixed case: the restaurant operator is independent, but it rents its rooftop from The Hoxton, part of Accor's Ennismore lifestyle-hotel group.",
+      "sources": [
+        { "label": "Inquirer: Laser Wolf Brooklyn", "url": "https://inquirer.com/food/laser-wolf-brooklyn-michael-solomonov-20211019.html" },
+        { "label": "Skift: Accor and Ennismore close merger", "url": "https://skift.com/2021/10/04/accor-and-ennismore-close-on-lifestyle-hotel-brand-mega-merger" }
+      ]
+    },
+    {
+      "id": "westlight",
+      "name": "Westlight",
+      "address": "111 N 12th St (William Vale, 22nd fl)",
+      "lat": 40.722298, "lng": -73.956734,
+      "area": "Waterfront",
+      "cuisine": "Bar & wine",
+      "tier": "indie",
+      "confidence": "medium",
+      "owner": "NoHo Hospitality Group (Andrew Carmellini, Luke Ostrom, Josh Pickard)",
+      "chain": ["Westlight", "NoHo Hospitality Group (privately held)"],
+      "note": "Rooftop bar run by a privately held NYC restaurant group. We found no PE owner, but the group is not a single-site independent.",
+      "sources": [
+        { "label": "Westlight: About", "url": "https://www.westlightnyc.com/about/" },
+        { "label": "Time Out: Westlight", "url": "https://www.timeout.com/newyork/bars/westlight" }
+      ]
+    }
+  ]
+}
