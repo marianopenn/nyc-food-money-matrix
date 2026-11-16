@@ -44,4 +44,4 @@ To add or correct a place, open an issue or PR with a source link. Ownership cha
 
 ## Stack
 
-Plain HTML/CSS/JS, [Leaflet](https://leafletjs.com) 1.9.4, CARTO dark basemap (OpenStreetMap data), Google Fonts (Anton, Archivo, IBM Plex Mono).
+Plain HTML/CSS/JS, [Leaflet](https://leafletjs.com) 1.9.4, OpenStreetMap tiles (darkened with a CSS filter), Google Fonts (Anton, Archivo, IBM Plex Mono).

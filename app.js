@@ -80,10 +80,10 @@
     map = L.map("map", { zoomControl: true, scrollWheelZoom: true, attributionControl: true })
       .setView(HOME.center, HOME.zoom);
 
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
-      subdomains: "abcd",
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+      className: "street-tiles",
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
     var Reset = L.Control.extend({
@@ -95,12 +95,13 @@
         L.DomEvent.on(a, "click", function (e) {
           L.DomEvent.preventDefault(e);
           clearSelection();
-          map.setView(HOME.center, HOME.zoom);
+          map.fitBounds(HOME.bounds);
         });
         return wrap;
       }
     });
     map.addControl(new Reset());
+    HOME.bounds = null;
 
     places.forEach(function (p) {
       var icon = L.divIcon({
@@ -114,6 +115,8 @@
         .on("click", function () { select(p.id, true); });
       markers[p.id] = m;
     });
+    HOME.bounds = L.latLngBounds(places.map(function (p) { return [p.lat, p.lng]; })).pad(0.08);
+    map.fitBounds(HOME.bounds);
   }
 
   function bindControls() {

@@ -154,7 +154,7 @@ h1 .hl {
   height: 100vh; min-height: 520px;
   background: #0d0d0d;
 }
-.leaflet-tile-pane { filter: contrast(1.15) saturate(.6) brightness(.95); }
+.street-tiles { filter: grayscale(1) invert(1) contrast(1.25) brightness(.78); }
 .leaflet-container { font-family: var(--body); }
 .leaflet-control-zoom a {
   background: var(--paper) !important; color: var(--ink) !important;
