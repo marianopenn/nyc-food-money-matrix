@@ -31,9 +31,13 @@
     places = spreadDuplicates(data.places);
     $("reviewed").textContent = data.lastReviewed;
 
-    ["pe", "corp", "indie"].forEach(function (t) {
-      $("count-" + t).textContent = places.filter(function (p) { return p.tier === t; }).length;
+    var ratio = "";
+    ["pe", "indie", "corp"].forEach(function (t) {
+      var n = places.filter(function (p) { return p.tier === t; }).length;
+      $("count-" + t).textContent = n;
+      ratio += '<span class="' + t + '" style="flex:' + n + '"></span>';
     });
+    $("ratio").innerHTML = ratio;
 
     fillSelect("area", uniq(places.map(function (p) { return p.area; })));
     fillSelect("cuisine", uniq(places.map(function (p) { return p.cuisine; })));
@@ -106,9 +110,9 @@
     places.forEach(function (p) {
       var icon = L.divIcon({
         className: "",
-        html: '<div class="pin ' + p.tier + '" data-id="' + esc(p.id) + '">' + TIER[p.tier].glyph + "</div>",
-        iconSize: [26, 26],
-        iconAnchor: [13, 13]
+        html: '<div class="pin ' + p.tier + '" data-id="' + esc(p.id) + '"></div>',
+        iconSize: [16, 16],
+        iconAnchor: [8, 8]
       });
       var m = L.marker([p.lat, p.lng], { icon: icon, title: p.name + " (" + TIER[p.tier].label + ")", riseOnHover: true })
         .addTo(map)
@@ -149,7 +153,7 @@
       btn.setAttribute("aria-pressed", String(btn.getAttribute("data-tier") === state.tier));
     });
 
-    var order = { pe: 0, corp: 1, indie: 2 };
+    var order = { pe: 0, indie: 1, corp: 2 };
     var shown = places.filter(matches).sort(function (a, b) {
       return order[a.tier] - order[b.tier] || a.name.localeCompare(b.name);
     });
@@ -171,13 +175,19 @@
       list.innerHTML = '<li class="empty">Nothing matches. Loosen a filter.</li>';
       return;
     }
-    list.innerHTML = shown.map(function (p) {
-      return '<li class="row' + (p.id === state.activeId ? " active" : "") + '" tabindex="0" data-id="' + esc(p.id) + '">' +
-        '<span class="bullet ' + p.tier + '">' + TIER[p.tier].glyph + "</span>" +
-        "<div><div class=\"name\">" + esc(p.name) + "</div>" +
-        '<div class="meta">' + esc(p.address) + " · " + esc(p.cuisine) + "</div></div>" +
-        '<span class="tag">' + TIER[p.tier].short + "</span></li>";
-    }).join("");
+    var html = "", lastTier = null;
+    shown.forEach(function (p) {
+      if (p.tier !== lastTier) {
+        var n = shown.filter(function (o) { return o.tier === p.tier; }).length;
+        html += '<li class="group" aria-hidden="true"><span>' + TIER[p.tier].label + "</span><span>" + n + "</span></li>";
+        lastTier = p.tier;
+      }
+      html += '<li class="row' + (p.id === state.activeId ? " active" : "") + '" tabindex="0" data-id="' + esc(p.id) + '">' +
+        '<i class="mk ' + p.tier + '"></i>' +
+        '<div><div class="name">' + esc(p.name) + "</div>" +
+        '<div class="meta">' + esc(p.cuisine) + " · " + esc(p.address) + "</div></div></li>";
+    });
+    list.innerHTML = html;
 
     list.querySelectorAll(".row").forEach(function (row) {
       var id = row.getAttribute("data-id");
@@ -235,10 +245,10 @@
     var el = $("detail");
     var t = TIER[p.tier];
     var html = '<button class="close" aria-label="Close">&times;</button>' +
-      '<span class="stamp ' + p.tier + '">' + t.label + "</span>" +
+      '<span class="stamp ' + p.tier + '"><i class="mk ' + p.tier + '"></i>' + t.label + "</span>" +
       "<h2>" + esc(p.name) + "</h2>" +
       '<p class="addr">' + esc(p.address) + " · " + esc(p.area) + " · " + esc(p.cuisine) + "</p>" +
-      '<p class="owner">Owned by: ' + esc(p.owner) + "</p>" +
+      '<p class="owner"><span>Owned by</span><span>' + esc(p.owner) + "</span></p>" +
       '<p class="note">' + esc(p.note) + "</p>" +
       "<h3>Follow the money</h3>" +
       '<ol class="money">' + (p.chain || []).map(function (c) { return "<li>" + esc(c) + "</li>"; }).join("") + "</ol>" +
@@ -250,9 +260,9 @@
 
     if (p.tier !== "indie") {
       var alts = nearbyIndies(p);
-      html += "<h3>Go independent instead</h3><ul class=\"alts\">" + alts.map(function (a) {
+      html += "<h3>Independent nearby</h3><ul class=\"alts\">" + alts.map(function (a) {
         var mins = Math.max(1, Math.round(a.d / 80));
-        return '<li><button data-id="' + esc(a.p.id) + '"><span class="bullet indie">I</span>' +
+        return '<li><button data-id="' + esc(a.p.id) + '"><i class="mk indie"></i>' +
           "<span><strong>" + esc(a.p.name) + "</strong> · " + esc(a.p.cuisine) + "</span>" +
           '<span class="walk">' + mins + " min walk</span></button></li>";
       }).join("") + "</ul>";

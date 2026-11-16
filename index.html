@@ -3,99 +3,113 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Who Owns The Block: Williamsburg</title>
-  <meta name="description" content="Which Williamsburg, Brooklyn restaurants and cafés are private-equity backed, corporate or VC funded, or independent. Every entry is sourced.">
-  <meta property="og:title" content="Who Owns The Block: Williamsburg">
-  <meta property="og:description" content="Find out whether your Williamsburg spot is PE-backed before you go, and find an independent one nearby.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23141414'/%3E%3Ccircle cx='16' cy='16' r='11' fill='%23ff3b1f'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='900' font-size='16' text-anchor='middle' fill='%23141414'%3E$%3C/text%3E%3C/svg%3E">
+  <title>NYC Food Matrix</title>
+  <meta name="description" content="NYC Food Matrix: which New York restaurants and cafés are private-equity backed, corporate or VC funded, or independent. Starting with Williamsburg, Brooklyn. Every entry is sourced.">
+  <meta property="og:title" content="NYC Food Matrix">
+  <meta property="og:description" content="Check whether your Williamsburg spot is PE-backed before you go, and find an independent one nearby.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23111'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='17' text-anchor='middle' fill='%23fff'%3E$%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-
-  <header class="masthead">
-    <div class="tape" aria-hidden="true"></div>
-    <div class="masthead-inner">
-      <p class="kicker">Brooklyn&nbsp;/&nbsp;11211&nbsp;·&nbsp;11249&nbsp;·&nbsp;11206</p>
-      <h1>Who owns<br><span class="hl">the block?</span></h1>
-      <p class="dek">Williamsburg restaurants, cafés and bars, sorted by who really owns them. Check before you spend, and find an independent spot around the corner.</p>
-    </div>
-    <div class="stats" role="group" aria-label="Filter by ownership">
-      <button class="stat" data-tier="pe" aria-pressed="false">
-        <span class="bullet pe">$</span>
-        <span class="num" id="count-pe">0</span>
-        <span class="lbl">PE-backed</span>
-      </button>
-      <button class="stat" data-tier="corp" aria-pressed="false">
-        <span class="bullet corp">C</span>
-        <span class="num" id="count-corp">0</span>
-        <span class="lbl">Corp &amp; VC</span>
-      </button>
-      <button class="stat" data-tier="indie" aria-pressed="false">
-        <span class="bullet indie">I</span>
-        <span class="num" id="count-indie">0</span>
-        <span class="lbl">Independent</span>
-      </button>
-    </div>
-    <p class="hint">Tap a number to filter. Tap it again to clear.</p>
-  </header>
-
-  <main class="board">
-    <section class="map-wrap" aria-label="Map">
-      <div id="map"></div>
-      <div class="legend" aria-hidden="true">
-        <span><i class="dot pe"></i>PE</span>
-        <span><i class="dot corp"></i>Corp/VC</span>
-        <span><i class="dot indie"></i>Indie</span>
+  <div class="app">
+    <aside class="side" aria-label="Places">
+      <div class="skyline" aria-hidden="true">
+        <svg viewBox="0 0 520 150" preserveAspectRatio="xMidYMax slice" role="img">
+          <rect width="520" height="150" fill="#dfe8f2"/>
+          <rect x="0" y="0" width="180" height="96" fill="#cfdcf0"/>
+          <rect x="300" y="0" width="220" height="96" fill="#f6e7a8"/>
+          <circle cx="455" cy="40" r="17" fill="#f7c9a4"/>
+          <!-- Manhattan across the river -->
+          <g fill="#b8c4d4">
+            <rect x="12" y="70" width="16" height="40"/><rect x="30" y="58" width="12" height="52"/>
+            <path d="M58 110V52h6V36h4V18h2V8h1v10h2v18h4v16h6v58z"/>
+            <rect x="92" y="64" width="14" height="46"/><rect x="108" y="74" width="12" height="36"/>
+            <path d="M132 110V44l9-12 9 12v66z"/>
+          </g>
+          <!-- Williamsburg Bridge -->
+          <g stroke="#1f2a37" stroke-width="2.4" fill="none">
+            <path d="M150 104h220"/>
+            <path d="M150 104 C185 102 205 70 212 60 C240 92 300 92 316 60 C322 70 342 102 370 104" stroke-width="1.6"/>
+          </g>
+          <g fill="#1f2a37">
+            <rect x="207" y="56" width="10" height="52"/><rect x="311" y="56" width="10" height="52"/>
+            <rect x="205" y="54" width="14" height="4"/><rect x="309" y="54" width="14" height="4"/>
+          </g>
+          <!-- Domino refinery stack -->
+          <g fill="#c4553b"><rect x="372" y="48" width="12" height="62"/><rect x="386" y="78" width="40" height="32"/></g>
+          <rect x="374" y="40" width="8" height="10" fill="#7a3324"/>
+          <!-- brownstones + water towers -->
+          <g fill="#9c5a3c"><rect x="430" y="80" width="34" height="30"/><rect x="466" y="72" width="30" height="38"/><rect x="498" y="84" width="22" height="26"/></g>
+          <g fill="#f3eadc"><rect x="436" y="88" width="6" height="8"/><rect x="450" y="88" width="6" height="8"/><rect x="472" y="82" width="6" height="8"/><rect x="484" y="82" width="6" height="8"/><rect x="472" y="96" width="6" height="8"/><rect x="484" y="96" width="6" height="8"/></g>
+          <g fill="#5b3d2b"><path d="M440 80v-6h14v6z"/><path d="M439 74l8-8 8 8z"/><path d="M476 72v-8h12v8z"/><path d="M475 64l7-7 7 7z"/></g>
+          <!-- river -->
+          <rect x="0" y="108" width="520" height="42" fill="#8fb3d9"/>
+          <path d="M0 118h40M70 126h60M160 120h40M240 130h70M350 122h50M440 132h60" stroke="#c7dcf0" stroke-width="2"/>
+          <rect x="0" y="146" width="520" height="4" fill="#1f2a37"/>
+        </svg>
       </div>
-    </section>
 
-    <section class="side" aria-label="Places">
-      <div class="controls">
-        <label class="sr" for="q">Search</label>
-        <input id="q" type="search" placeholder="Search a name, street or owner…" autocomplete="off">
-        <div class="selects">
-          <label class="sr" for="area">Area</label>
-          <select id="area"><option value="">All areas</option></select>
-          <label class="sr" for="cuisine">Food</label>
-          <select id="cuisine"><option value="">All food</option></select>
+      <div class="side-inner">
+        <header class="intro">
+          <h1>NYC Food Matrix</h1>
+          <p class="where">Williamsburg, Brooklyn</p>
+          <p class="dek">Who's really behind the restaurants, cafés and bars you go to. Check whether a spot is private equity–backed before you go, and find an independent one nearby.</p>
+        </header>
+
+        <div class="stats" role="group" aria-label="Filter by ownership">
+          <button class="stat pe" data-tier="pe" aria-pressed="false">
+            <span class="num" id="count-pe">0</span>
+            <span class="lbl"><i class="mk pe"></i>PE-backed</span>
+          </button>
+          <button class="stat indie" data-tier="indie" aria-pressed="false">
+            <span class="num" id="count-indie">0</span>
+            <span class="lbl"><i class="mk indie"></i>Independent</span>
+          </button>
+          <button class="stat corp" data-tier="corp" aria-pressed="false">
+            <span class="num" id="count-corp">0</span>
+            <span class="lbl"><i class="mk corp"></i>Corp &amp; VC</span>
+          </button>
         </div>
-      </div>
+        <div class="ratio" id="ratio" aria-hidden="true"></div>
+        <p class="hint">Tap a number to filter</p>
 
+        <div class="controls">
+          <label class="sr" for="q">Search</label>
+          <input id="q" type="search" placeholder="Search a place, owner or street" autocomplete="off">
+          <div class="selects">
+            <label class="sr" for="area">Area</label>
+            <select id="area"><option value="">All areas</option></select>
+            <label class="sr" for="cuisine">Food</label>
+            <select id="cuisine"><option value="">All food</option></select>
+          </div>
+        </div>
+
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <ol id="list" class="list"></ol>
+
+        <section class="method" id="method">
+          <h2>How we label places</h2>
+          <h3><i class="mk pe"></i>PE-backed</h3>
+          <p>A private-equity or growth-equity firm owns the brand or holds a reported stake, directly or through a holding company. That includes franchises: a Dunkin' may be run by a local franchisee, but the brand and its royalties sit with a buyout fund.</p>
+          <h3><i class="mk corp"></i>Corp &amp; VC</h3>
+          <p>Owned by a publicly traded company, or scaling on venture-capital rounds.</p>
+          <h3><i class="mk indie"></i>Independent</h3>
+          <p>Run by its founders, a family or a local operator, with no institutional owner found in public reporting. Small local groups still count. Mixed cases are flagged in the notes.</p>
+          <p class="fine">Every entry links to its sources, and "confidence" reflects how directly they show the ownership. Spot something wrong or missing? <a href="https://github.com/marianopenn/nyc-food-money-matrix/issues/new" target="_blank" rel="noopener">Open an issue</a> with a link. Last reviewed <span id="reviewed"></span>.</p>
+          <p class="fine">Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors. Geocoding: NYC Planning GeoSearch.</p>
+        </section>
+      </div>
+    </aside>
+
+    <main class="map-wrap" aria-label="Map">
+      <div id="map"></div>
       <article id="detail" class="detail" hidden></article>
-
-      <p class="result-count" id="result-count" aria-live="polite"></p>
-      <ol id="list" class="list"></ol>
-    </section>
-  </main>
-
-  <section class="method" id="method">
-    <h2>How we call it</h2>
-    <div class="cols">
-      <div>
-        <h3><span class="bullet pe sm">$</span> PE-backed</h3>
-        <p>A private-equity or growth-equity firm owns the brand or holds a reported stake, directly or through a holding company. That includes franchised chains: a Dunkin' may be run by a local franchisee, but the brand and its royalties sit with a buyout fund.</p>
-      </div>
-      <div>
-        <h3><span class="bullet corp sm">C</span> Corp &amp; VC</h3>
-        <p>A publicly traded company owns it, or it's scaling on venture-capital rounds. That's big money with different incentives than a buyout fund.</p>
-      </div>
-      <div>
-        <h3><span class="bullet indie sm">I</span> Independent</h3>
-        <p>Run by its founders, a family or a local operator, with no institutional owner turned up in public reporting. A small local group like Andrew Tarlow's still counts. Mixed cases are flagged in the notes.</p>
-      </div>
-    </div>
-    <p class="fine">Every entry links to its sources. "Confidence" reflects how directly those sources show the ownership. Ownership changes, and some stakes are never disclosed. If you spot something wrong or missing, <a href="https://github.com/marianopenn/nyc-food-money-matrix/issues/new" target="_blank" rel="noopener">open an issue</a> with a link. Last reviewed <span id="reviewed"></span>.</p>
-  </section>
-
-  <footer class="foot">
-    <span>Williamsburg first. The rest of the five boroughs next.</span>
-    <span>Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors · Geocoding: NYC Planning GeoSearch</span>
-  </footer>
+    </main>
+  </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="app.js"></script>

@@ -1,4 +1,4 @@
-# Who Owns The Block? (NYC Food Money Matrix)
+# NYC Food Matrix
 
 A map of Williamsburg, Brooklyn restaurants, cafés and bars, labelled by who actually owns them:
 
@@ -44,4 +44,4 @@ To add or correct a place, open an issue or PR with a source link. Ownership cha
 
 ## Stack
 
-Plain HTML/CSS/JS, [Leaflet](https://leafletjs.com) 1.9.4, OpenStreetMap tiles (darkened with a CSS filter), Google Fonts (Anton, Archivo, IBM Plex Mono).
+Plain HTML/CSS/JS, [Leaflet](https://leafletjs.com) 1.9.4, OpenStreetMap tiles (darkened with a CSS filter), Google Fonts (Inter, IBM Plex Mono).
