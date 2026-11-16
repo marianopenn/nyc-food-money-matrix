@@ -8,10 +8,10 @@
   };
   var HOME = { center: [40.7148, -73.9560], zoom: 15 };
 
-  var state = { tier: "", area: "", cuisine: "", q: "", activeId: null };
+  var state = { tier: "", area: "", cuisine: "", q: "", activeId: null, alts: [] };
   var places = [];
   var markers = {};
-  var map;
+  var map, altLayer;
 
   var $ = function (id) { return document.getElementById(id); };
   var esc = function (s) {
@@ -105,6 +105,7 @@
       }
     });
     map.addControl(new Reset());
+    altLayer = L.layerGroup().addTo(map);
     HOME.bounds = null;
 
     places.forEach(function (p) {
@@ -163,8 +164,9 @@
       if (!el) return;
       var pin = el.querySelector(".pin");
       var on = matches(p);
-      pin.classList.toggle("dim", !on);
+      pin.classList.toggle("dim", !on && state.alts.indexOf(p.id) === -1);
       pin.classList.toggle("active", p.id === state.activeId);
+      pin.classList.toggle("alt", state.alts.indexOf(p.id) !== -1);
       markers[p.id].setZIndexOffset(p.id === state.activeId ? 1000 : on ? 100 : 0);
     });
 
@@ -208,13 +210,23 @@
     if (!p) return;
     state.activeId = id;
     if (history.replaceState) history.replaceState(null, "", "#" + id);
+    state.alts = [];
     showDetail(p, !quiet);
+    drawAltLines(p);
     render();
-    if (fly && map) map.flyTo([p.lat, p.lng], Math.max(map.getZoom(), 16), { duration: 0.6 });
+    if (fly && map) {
+      var pts = [[p.lat, p.lng]].concat(state.alts.map(function (id) { var o = byId(id); return [o.lat, o.lng]; }));
+      var wide = window.matchMedia("(min-width: 861px)").matches;
+      var pad = wide ? { paddingTopLeft: [60, 60], paddingBottomRight: [460, 60] } : { paddingTopLeft: [30, 30], paddingBottomRight: [30, 30] };
+      if (pts.length > 1) map.flyToBounds(pts, Object.assign({ maxZoom: 17, duration: 0.6 }, pad));
+      else map.flyTo([p.lat, p.lng], Math.max(map.getZoom(), 16), { duration: 0.6 });
+    }
   }
 
   function clearSelection() {
     state.activeId = null;
+    state.alts = [];
+    if (altLayer) altLayer.clearLayers();
     $("detail").hidden = true;
     if (history.replaceState) history.replaceState(null, "", location.pathname + location.search);
     render();
@@ -241,6 +253,32 @@
       .slice(0, 3);
   }
 
+  function walkLabel(m) {
+    var mins = Math.max(1, Math.round(m / 80));
+    return mins <= 20 ? mins + " min walk" : (m / 1000).toFixed(1) + " km";
+  }
+
+  function altsHtml(p) {
+    if (p.tier === "indie") return "";
+    var alts = nearbyIndies(p);
+    state.alts = alts.map(function (a) { return a.p.id; });
+    return '<section class="alts-box"><h3>Independent nearby</h3><ul class="alts">' + alts.map(function (a) {
+      return '<li><button data-id="' + esc(a.p.id) + '">' +
+        '<span class="alt-text"><span class="alt-name">' + esc(a.p.name) + "</span>" +
+        '<span class="alt-meta">' + esc(a.p.cuisine) + (a.p.cuisine === p.cuisine ? " · same kind of food" : "") + "</span></span>" +
+        '<span class="walk">' + walkLabel(a.d) + "</span></button></li>";
+    }).join("") + "</ul></section>";
+  }
+
+  function drawAltLines(p) {
+    altLayer.clearLayers();
+    if (!p || p.tier === "indie") return;
+    state.alts.forEach(function (id) {
+      var o = byId(id);
+      L.polyline([[p.lat, p.lng], [o.lat, o.lng]], { color: "#1d7a46", weight: 2, opacity: .8, dashArray: "4 6", interactive: false }).addTo(altLayer);
+    });
+  }
+
   function showDetail(p, scroll) {
     var el = $("detail");
     var t = TIER[p.tier];
@@ -250,6 +288,7 @@
       '<p class="addr">' + esc(p.address) + " · " + esc(p.area) + " · " + esc(p.cuisine) + "</p>" +
       '<p class="owner"><span>Owned by</span><span>' + esc(p.owner) + "</span></p>" +
       '<p class="note">' + esc(p.note) + "</p>" +
+      altsHtml(p) +
       "<h3>Follow the money</h3>" +
       '<ol class="money">' + (p.chain || []).map(function (c) { return "<li>" + esc(c) + "</li>"; }).join("") + "</ol>" +
       "<h3>Sources</h3>" +
@@ -257,16 +296,6 @@
         return '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.label) + "</a></li>";
       }).join("") + "</ol>" +
       '<p class="conf">Confidence: ' + esc(p.confidence) + "</p>";
-
-    if (p.tier !== "indie") {
-      var alts = nearbyIndies(p);
-      html += "<h3>Independent nearby</h3><ul class=\"alts\">" + alts.map(function (a) {
-        var mins = Math.max(1, Math.round(a.d / 80));
-        return '<li><button data-id="' + esc(a.p.id) + '"><i class="mk indie"></i>' +
-          "<span><strong>" + esc(a.p.name) + "</strong> · " + esc(a.p.cuisine) + "</span>" +
-          '<span class="walk">' + mins + " min walk</span></button></li>";
-      }).join("") + "</ul>";
-    }
 
     el.innerHTML = html;
     el.hidden = false;
